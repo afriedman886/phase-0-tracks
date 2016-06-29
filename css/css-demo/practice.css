@@ -2,6 +2,8 @@
 font-size: .8em;
 }
 
+
+
 .job{
 background-color: #E9E5DC;
 border-radius: 20px;
@@ -9,6 +11,17 @@ padding: 10px;
 margin-bottom: 10px;
 }
 
+
+
 .accomplishments{
   font-size: .8em;
+}
+
+.accomplishments li {
+  color: red;
+}
+
+
+section.job:hover {
+  background-color: green;
 }
