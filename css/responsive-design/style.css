@@ -73,7 +73,7 @@ ol {
   }
 }
 
-@media screen and (max-width: 714px) {
+@media screen and (max-width: 300px) {
   #external-links {
     width: 100%;
   }
