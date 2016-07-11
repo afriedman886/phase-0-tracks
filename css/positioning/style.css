@@ -1,0 +1,40 @@
+#body {
+ position: fixed;
+ top: 280px;
+ left: 460px;
+
+}
+
+#hat {
+  position: fixed;
+  top: 200px;
+  left: 440px;
+  z-index: 2
+
+}
+
+#glasses {
+  position: fixed;
+  top: 380px;
+  left: 500px;
+  z-index: 3
+}
+
+body {
+  background-color: #7ECEFD;
+
+}
+
+h1 {
+  color: #3E454C;
+  text-align: center;
+  font-size: 60px;
+  font-family: Verdana;
+}
+
+.octopus {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
