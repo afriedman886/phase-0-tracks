@@ -1,0 +1,23 @@
+How To: Use an Elevator
+
+- Raise arm until arm height = elevator call button height.
+  - If destination floor is < current floor, push "Down" button.
+  - If destination floor is > current floor, push "Up" button.
+  - If destination floor = current floor, go about your day, no elevator ride  is needed.
+- Lower arm. Until elevator doors open, wait patiently.
+- Once elevator doors open, walk into elevator.
+  - Stop walking when distance to elevator wall = 8 inches.
+  - Turn 180 degrees.
+- Scan wall from right to left until button panel is found.
+- Walk to button panel until distance from panel = 10 inches.
+- Scan buttons until finding button whose number = destination floor number.
+- Raise arm until arm height = destination floor button height.
+- Push destination floor button.
+- Lower arm, move laterally until body is facing elevator doors.
+- Once elevator doors re-open, walk completely out of elevator and onto destination floor.
+
+
+
+How To: Brush Your Teeth
+
+-
