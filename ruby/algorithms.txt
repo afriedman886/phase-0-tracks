@@ -20,4 +20,36 @@ How To: Use an Elevator
 
 How To: Brush Your Teeth
 
--
+- Walk into bathroom until reaching the sink. 
+- Turn to face the sink.
+- Scan up from sink until finding mirror cabinet.
+- Open mirror cabinet.
+- Scan cabinet until toothbrush is found.
+- Remove toothbrush from cabinet and place it on countertop.
+    - Toothbrush location = 1 inch to the right of the sinkbowl.
+- Re-scan cabinet until toothpaste is found.
+- Grab toothpaste with hand-1, and remove from cabinet.  Use hand-2 to remove toothpaste cap and place it on countertop next to sinkbowl.  
+- Grab toothbrush with hand-2.
+- Using hand-1, move toothpaste until the position of toothpaste-opening = position of toothbrush-bristles-bottom.
+- Slowly contract hand-1 until toothpaste comes out of toothpaste-opening.
+    - Once toothpaste starts to emerge, slowly move hand-1 towards toothbrush-bristles-top, evenly distributing toothpaste along the entire length of the toothbrush-bristles.
+    - Stop hand contraction (cease toothpaste distribution) once reaching toothbrush-bristles-top.
+- Replace toothbrush back to its prior position on the countertop.
+- Grab toothpaste cap with hand-2 and twist it back onto toothpaste-opening.
+- Replace toothpaste back to its prior position inside the cabinet.
+- Grab toothbrush.
+    - Optional step: Turn handle on sink to start flow of water. Hold toothbrush-bristles under water flow for 1 second to wet the brush.
+    - Optional step: Turn handle on sink to start flow of water.  Cup hand underneath water flow until hand is full of water.  Bring hand to mouth and pour water into mouth.  Swish water in mouth for 2 seconds and spit out into sink.
+- Open mouth and insert toothbrush-head until toothbrush-bristles are aligned with teeth-upper-row in the left-backside of the mouth.
+- Using a small, controlled circular motion, move the toothbrush-bristles across the front side of the teeth-upper-row until reaching the right-backside of the mouth.  Continue the same motion on the backside of the teeth-upper-row.
+- Repeat previous step for teeth-bottom-row.
+- Open mouth wide and move toothbrush-bristles is a forward-back motion along the cusps of both the teeth-upper-row and teeth-bottom-row.
+- Spit excess saliva into sink bowl.
+- Stick out tongue and move toothbrush-bristles in a forward-back motion along the surface of tongue (not to exceed the point of gag reflex).
+- Turn handle on sink to start flow of water.  Cup hand underneath water flow until hand is full of water.  Bring hand to mouth and pour water into mouth.  Swish water in mouth for 5 seconds and spit out into sink.  Repeat if desired.
+- Hold toothbrush-bristles under water flow for 5 seconds to clean toothbrush.
+- Tap toothbrush handle twice against rim of sink to shake off excess water.
+- Replace toothbrush back to its prior position inside the cabinet.
+- Close the cabinet.
+
+     
