@@ -1,0 +1,47 @@
+header {
+  background-color: beige;
+  padding: 10px;
+}
+
+h1, h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+body {
+  font-family: "Lucida Console";
+  background-image: url("https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg");
+}
+
+.column-1 {
+  background-color: pink;
+  display: inline-block;
+  height: 1200px;
+  width: 300px;
+  vertical-align: top;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+  margin-left: 100px;
+  border: 2px solid black;
+}
+.column-2 {
+  background-color: pink;
+  display: inline-block;
+  width: 300px;
+  height: 1200px;
+  vertical-align: top;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: right;
+  margin-right: 100px;
+  border: 2px solid black;
+}
+footer {
+  clear: both;
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  background-color: beige;
+}
