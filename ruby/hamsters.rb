@@ -1,4 +1,4 @@
-def hamster
+
   puts "What is the hamster's name?"
   name = gets.chomp
   puts "How loud is the hamster? (Please rate the volume on a scale of 1-10.)"
@@ -11,13 +11,13 @@ def hamster
   age = gets.chomp
 
     if age.empty?
-      age = "nil"
-    else age = gets.chomp.to_i
+      age = nil
+    else age = age.to_i
     end
 
   puts "Hamster's name: #{name}"
-  puts "Hamster's estimated age: #{age}"
+  puts "Estimated age: #{age}"
   puts "Fur color: #{color}"
   puts "Volume level: #{volume}"
   puts "Good candidate for adoption: #{adoption}"
-end
+
