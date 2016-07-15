@@ -15,9 +15,11 @@
     else age = age.to_i
     end
 
+  puts "-------------------------------------------"
   puts "Hamster's name: #{name}"
   puts "Estimated age: #{age}"
   puts "Fur color: #{color}"
   puts "Volume level: #{volume}"
   puts "Good candidate for adoption: #{adoption}"
+  puts "-------------------------------------------"
 
