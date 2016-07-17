@@ -23,12 +23,12 @@ until processed_new_employees == new_employees
   puts "Would you like to enroll in our company insurance plan? (yes/no)"
   insurance = gets.chomp
 
-  puts "Do you have any alergies? If so, please list them one at a time. (When finished, please type \"done\".)"
-  alergies = gets.chomp
-    until alergies.include?("done")
-      puts "Additional alergy?"
-      alergies = alergies + ", " + gets.chomp
-        if alergies.include?("sunshine")
+  puts "Do you have any allergies? If so, please list them one at a time. (When finished, please type \"done\".)"
+  allergies = gets.chomp
+    until allergies.include?("done")
+      puts "Additional allergy?"
+      allergies = allergies + ", " + gets.chomp
+        if allergies.include?("sunshine")
           break
         end
     end
@@ -37,7 +37,7 @@ until processed_new_employees == new_employees
       vampire_status = "Probably not a vampire."
     end
 
-    if ((current_year - birth_year) != age && (garlic == "no" || insurance == "no")) || alergies.include?("sunshine")
+    if ((current_year - birth_year) != age && (garlic == "no" || insurance == "no")) || allergies.include?("sunshine")
       vampire_status = "Probably a vampire."
     end
 
