@@ -47,7 +47,7 @@ end
 
 puts client_info
 
-puts "Would you like to make any changes? (Type 'none' if information is accurate.)"
+puts "Would you like to make any changes? (Type 'none' if all information is correct.)"
 errors = gets.chomp
 
 if errors != "none"
