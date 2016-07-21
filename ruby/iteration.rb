@@ -23,3 +23,12 @@ animals.each { |animal| puts animal }
 
 puts "After .each"
 p animals
+
+
+puts "Before .map!"
+p animals
+
+animals.map! { |animal| animal.capitalize }
+
+puts "After map!"
+p animals
