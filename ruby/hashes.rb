@@ -1,8 +1,8 @@
 # INTERIOR DESIGN - NEW CLIENT INTAKE FORM
 
 client_info = {}
-budget = nil
 rooms_to_decorate = []
+budget = nil
 
 # Collect new client information
 puts "Client name:"
@@ -19,7 +19,7 @@ client_info[:decor] = gets.chomp
 
 puts "Which rooms would the client like to re-decorate?  (Please list rooms one at a time. Type 'done' once all rooms have been listed.)"
 loop do
-  room = gets.chomp
+  room = gets.chomp.downcase
   break if room == "done"
   rooms_to_decorate << room
 end
@@ -54,7 +54,7 @@ if errors != "none"
   puts "Which field name would you like to update?"
   field_name = gets.chomp.to_sym
 
-  if field_name != :rooms_to_decorate
+  if field_name != :rooms_to_decorate && field_name != :budget
     puts "Please type the revised information for this field:"
 
     # Client info corrections - data type: string
@@ -62,13 +62,13 @@ if errors != "none"
       client_info[field_name] = gets.chomp
 
     # Client info corrections - data type: integer
-    elsif field_name == :age || field_name == :children || field_name == :max_budget
+    else field_name == :age || field_name == :children || field_name == :max_budget
       client_info[field_name] = gets.chomp.to_i
-
-    # Client info corrections - data type: boolean
-    else field_name == :budget
-      client_info[:budget] = !client_info[:budget]
     end
+
+  # Client info corrections - data type: boolean
+  elsif field_name == :budget
+      client_info[:budget] = !client_info[:budget]
 
   # Client info corrections - data type: array
   else puts "Would you like to add (a) or remove (r) an exisiting room?"
@@ -82,6 +82,7 @@ if errors != "none"
     end
   end
 
+puts client_info
 end
 
-puts client_info
+
