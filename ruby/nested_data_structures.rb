@@ -58,3 +58,12 @@ weekly_meal_plan = {
 }
 
 p weekly_meal_plan
+
+puts "What did I plan to make for dinner on Thursday night?"
+p weekly_meal_plan[:thursday][:plan][:meal]
+
+puts "What was the sad meal I ended up eating instead that same night?  (Shout at me if you must...)"
+p weekly_meal_plan[:thursday][:reality].upcase
+
+puts "If I had had time to go to the grocery store on Tuesday, what is the first ingredient I would have put in my shopping cart?"
+p weekly_meal_plan[:tuesday][:plan][:grocery_list][0]
