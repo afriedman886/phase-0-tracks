@@ -1,22 +1,37 @@
 weekly_meal_plan = {
   monday: {
-    plan: "plan",
+    plan: {
+      meal: "beef wellington",
+      grocery_list: "groceries"
+      },
     reality: "frozen pizza"
     },
   tuesday: {
-    plan: "plan",
+    plan: {
+      meal: "paella",
+      grocery_list: "groceries"
+      },
     reality: "boxed mac and cheese"
     },
   wednesday: {
-    plan: "plan",
+    plan: {
+      meal: "wild mushroom risotto",
+      grocery_list: "groceries"
+      },
     reality: "thai takeout"
     },
   thursday: {
-    plan: "plan",
+    plan: {
+      meal: "chicken marsala",
+      grocery_list: "groceries"
+      },
     reality: "peanut butter and jelly sandwich"
     },
   friday: {
-    plan: "plan",
+    plan: {
+      meal: "duck a l'orange",
+      grocery_list: "groceries"
+      },
     reality: "happy hour appetizers"
   }
 }
