@@ -1,5 +1,7 @@
 # Release 0
 
+# Array (value -> index) search
+
 def search_array(array, value)
   if array.include?(value)
     index = 0
@@ -14,11 +16,13 @@ def search_array(array, value)
   value_index
 end
 
-
 test = [1, 2, 3]
+p search_array(test, 2)
 p search_array(test, 4)
 
 # Release 1
+
+# Fibonacci sequence generator
 
 def fib(num)
   fib_array = []
@@ -36,58 +40,54 @@ def fib(num)
   fib_array
 end
 
+p fib(8)
 p fib(100)[99] == 218922995834555169026
 
 # Release 2
 
-# Practice array for bubble sort
 test_array = [1, 4, 2, 6, 10, 3, 5]
-#
+
+# Visual practice for bubble sort method
+
+# [1, 4, 2, 6, 10, 3, 5]
+
 # [1, 2, 4, 6, 10, 3, 5]
-#
+
 # [1, 2, 4, 6, 3, 10, 5]
-#
+
 # [1, 2, 4, 3, 6, 10, 5]
-#
+
 # [1, 2, 3, 4, 6, 10, 5]
-#
+
 # [1, 2, 3, 4, 6, 5, 10]
-#
+
 # [1, 2, 3, 4, 5, 6, 10]
 
 # Bubble Sort
 
 # Take an array as an argument
 def bubble_sort(array)
-
   # Set a variable that equals the length of the array
   n = array.length
-
-  # Create a loop that will stop once no more items in the array have been swapped
+  # Create a loop that will break once no more items in the array need to be swapped (i.e. the array is in ascending order)
   loop do
-
     # Set initial value of swapped to false
     swapped = false
-
-    # Go through the array, starting at index 0
+    # Loop through the array, starting at index 0.
+    # Run loop (n-1) times, i.e. run for all index values
     (n-1).times do |i|
-
-      # Compare item at index and the next item
+      # Compare adjacent array values. If first value is greater than the next value, swap values and set swapped = true
       if array[i] > array[i+1]
-
-        # If item at index is greater than the next one, swap them and set swapped to true
         array[i], array[i+1] = array[i+1], array[i]
-
-        # If swapped equals true, go back to beginning of array and loop again, starting at index 0
         swapped = true
       end
     end
-
-    # If loop is completed and swapped is equal to false (throughout the whole loop), then break
+    # If swapped = true, go back to beginning of array and perform this loop again
+    # If swapped = false, then break loop
+        # If swapped = false, this means that for all instances of i, between the values of 0 and (n-1), that all adjacent value pairs in the array are in ascending order
     break if not swapped
   end
-
-  # Return array (it will be sorted in ascending order)
+  # Return array (it will now be sorted in ascending order)
   array
 end
 
