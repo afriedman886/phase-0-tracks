@@ -1,3 +1,5 @@
+# Release 0
+
 # Fake name creator
 
 def incognito(name)
@@ -15,7 +17,7 @@ def incognito(name)
     # Keep space value constant (if provided in argument)
     elsif name_array[i] == " "
       shift << " "
-    # Shift all consonant letters to the next in alphabetical order
+    # Shift all consonant letters to the next in alphabetical order; shift z => a
     else
       shift << name_array[i].tr('a-z', 'b-za')
     end
@@ -27,6 +29,23 @@ end
 
 # Driver Code
 
-p incognito("Zhomasz")
+p incognito("Felicia Torres")
+# Should return "Vussit Gimodoe"
+
+# last name capitalize
+
+# consonant shift to next consonant (can't be vowel)
+
+# edge cases??
+
+
+puts "Enter a name to receive a super secret alias identity. (Type 'quit' when you are satisfied with the alias.) "
+
+loop do
+name = gets.chomp
+break if name == "quit"
+p incognito(name)
+end
+
 
 
