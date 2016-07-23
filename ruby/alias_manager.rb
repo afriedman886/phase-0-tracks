@@ -1,11 +1,7 @@
 # Fake name creator
 
-def reverse(name)
-  name.split(' ').reverse.join(' ')
-end
-
-def letter_shift(name)
-  name_array = name.chars
+def incognito(name)
+  name_array = name.split(' ').reverse.join(' ').chars
     i = 0
     shift = []
     while i < name_array.length
@@ -18,11 +14,9 @@ def letter_shift(name)
       end
     i += 1
     end
-    shift
+    shift.join('')
 end
 
 
+p incognito("amy friedman")
 
-p reverse("amy friedman")
-
-p letter_shift("amy friedman")
