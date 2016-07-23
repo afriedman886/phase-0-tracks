@@ -39,13 +39,18 @@ p incognito("Felicia Torres")
 # edge cases??
 
 
-puts "Enter a name to receive a super secret alias identity. (Type 'quit' when you are satisfied with the alias.) "
+puts "Enter a name to receive a super secret alias identity."
+puts "(Type 'quit' when you are satisfied with the alias.)"
 
+alias_collection = {}
 loop do
 name = gets.chomp
 break if name == "quit"
 p incognito(name)
+alias_collection[name] = incognito(name)
 end
+
+alias_collection.each {|name, incognito| puts "#{incognito} is really #{name} in disguise."}
 
 
 
