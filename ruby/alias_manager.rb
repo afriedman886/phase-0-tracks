@@ -1,6 +1,4 @@
-# Release 0
-
-# Fake name creator
+# Alias creator
 
 def incognito(name)
   # Swap first and last name
@@ -35,12 +33,13 @@ end
 puts incognito("Felicia Torres")
 # Should return "Vussit Gimodoe"
 
-# last name capitalize
 
-
+# User Interface
 
 puts "Enter a name to receive a super secret alias identity."
 puts "(Type 'quit' when you are satisfied with the alias.)"
+
+# Allow user to receive multiple aliases
 
 alias_collection = {}
 loop do
@@ -49,6 +48,8 @@ break if name == "quit"
 p incognito(name)
 alias_collection[name] = incognito(name)
 end
+
+# Print list specifying all name/alias pairs
 
 alias_collection.each {|name, incognito| puts "#{incognito} is really #{name} in disguise."}
 
