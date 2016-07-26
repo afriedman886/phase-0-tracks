@@ -1,55 +1,52 @@
-
-
-
-
 class Puppy
 
   def fetch(toy)
     puts "I brought back the #{toy}!"
     toy
   end
-​
+
   def initialize
-    p "Initializing new puppy instance"
+    puts "Initializing new puppy instance"
   end
-​
+
   def speak(number)
-      "Woof!" * number
+    "Woof! " * number
   end
-​
-#   def speak(number)
-#     number.times do
-#     puts "Woof!"
-#   end
+
+# def speak(number)
+#   number.times do
+#   puts "Woof!"
+# end
 
   def roll_over
     "*rolls over*"
   end
-​
-  def dog_years(number)
-    number * 7
+
+  def dog_years(human_years)
+    human_years * 7
   end
-​
+
   def sit(duration)
-    "sits for #{duration} seconds"
+    "Sits for #{duration} seconds"
   end
-​
+
 end
-​
-​
+
+
 # Driver Code ----------
-​
+
 spot = Puppy.new
-​
-p spot.fetch("ball")
-​
+
+spot.fetch("ball")
+
 puts spot.speak(3)
-​
-p spot.roll_over
-​
-p spot.dog_years(3)
-​
-p spot.sit(3)
+
+puts spot.roll_over
+
+puts spot.dog_years(3)
+
+puts spot.sit(3)
+
 
 # ------------------------------------------------------
 
