@@ -1,5 +1,9 @@
+
+
+
+
 class Puppy
-​
+
   def fetch(toy)
     puts "I brought back the #{toy}!"
     toy
@@ -30,7 +34,6 @@ class Puppy
     "sits for #{duration} seconds"
   end
 ​
-​
 end
 ​
 ​
@@ -48,11 +51,12 @@ p spot.dog_years(3)
 ​
 p spot.sit(3)
 
+# ------------------------------------------------------
 
 class Gymnast
 
   def initialize
-    p "Initializing new Gymnast instance"
+    puts "Initializing new Gymnast instance"
   end
 
   def flip(n)
@@ -70,7 +74,7 @@ total_gymnast = []
   total_gymnast << Gymnast.new
 end
 
-p total_gymnast
+print total_gymnast
 
 
 total_gymnast.each do |gymnast|
