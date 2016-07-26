@@ -1,14 +1,18 @@
-#SPECIES ------------------------
-#Puppy
+# CLASS DESIGN
 
-#CHARACTERISTICS ----------------
-#Eyes: large
-#Ears: floppy
-#Friendly: true
-#Name: varies
-#Color: varies
+# CLASS ------------------------
+# Puppy
 
-#BEHAVIOR -----------------------
-#Bark
-#Fetch
-#Wag tail
+# CHARACTERISTICS ----------------
+# Eyes: large
+# Ears: floppy
+# Friendly: true
+# Color: varies
+# Name: varies
+
+# BEHAVIOR -----------------------
+# Bark
+# Wag_tail
+# Sit
+# Stay
+# Fetch
