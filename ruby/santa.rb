@@ -10,7 +10,7 @@ class Santa
     @gender = gender
     @ethnicity = ethnicity
     @reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-    @age = 0
+    @age = rand(0..140)
   end
 
   def speak
@@ -31,6 +31,7 @@ class Santa
 
 end
 
+# -----------------------------------------------------------
 # Driver Code
 
 #kris = Santa.new("Male", "Black")
@@ -58,3 +59,15 @@ end
 #
 # print new_santas
 
+# -----------------------------------------------------------
+
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+
+example_ethnicities = ["Latino", "Indian", "Japanese", "Sudanese", "French", "Korean", "Russian", "German", "Chinese", "prefer not to say"]
+
+# Santa Builder
+
+100.times do
+  santa = Santa.new(example_genders.sample, example_ethnicities.sample)
+  puts "Santa Stats: #{santa.gender}, #{santa.ethnicity}, #{santa.age} years old"
+end
