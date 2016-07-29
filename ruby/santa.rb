@@ -2,7 +2,10 @@
 
 class Santa
 
-   def initialize(gender, ethnicity)
+  attr_reader :age, :ethnicity
+  attr_accessor :gender
+
+  def initialize(gender, ethnicity)
     puts "Initializing Santa instance..."
     @gender = gender
     @ethnicity = ethnicity
@@ -26,30 +29,9 @@ class Santa
     @reindeer_ranking = @reindeer_ranking.insert(-1, @reindeer_ranking.delete(reindeer))
   end
 
-  def gender=(new_gender)
-    @gender = new_gender
-  end
-
-  def age
-    @age
-  end
-
-  def ethnicity
-    @ethnicity
-  end
-
-  #def gender
-  #  @gender
-  #end
-#
-  #def reindeer_ranking
-  #  @reindeer_ranking
-  #end
-
 end
 
 # Driver Code
-
 
 #kris = Santa.new("Male", "Black")
 #kris.speak
@@ -60,9 +42,6 @@ end
 #kris.gender = "N/A"
 #kris.get_mad_at("Rudolph")
 #puts kris.gender
-#print kris.reindeer_ranking
-
-
 
 
 # santa_hash = {
