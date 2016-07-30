@@ -15,8 +15,13 @@ let(:newgame) { Wordgame.new("elephant") }
     expect(newgame.letters_to_guess).to eq ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
   end
 
-  it "prints answer with all letters replaced by _ marks" do
+  it "prints answer with all letters replaced by '_' marks" do
     expect(newgame.progress).to eq "________"
+  end
+
+  it "updates progress after user guesses a letter" do
+    newgame.guess("e")
+    expect(newgame.progress).to eq "e_e_____"
   end
 
 end
