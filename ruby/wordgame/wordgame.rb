@@ -54,23 +54,23 @@ word = gets.chomp.downcase
 
 puts "\n"*100
 
-new_game = Wordgame.new(word)
+newgame = Wordgame.new(word)
 
 puts "Great!  I've got your answer safely stored away."
-puts "\nWelcome new player!  \nAre you ready to impress with your awesome word-guessing skills?  \nYou have #{new_game.guesses_remaining} guesses to figure out this word or phrase:"
+puts "\nWelcome new player!  \nAre you ready to impress with your awesome word-guessing skills?  \nYou have #{newgame.guesses_remaining} guesses to figure out this word or phrase:"
 
-puts new_game.progress
+puts newgame.progress
 
 puts "\nGuess a letter when you're ready to begin"
 
-until new_game.guesses_remaining == 0
+until newgame.guesses_remaining == 0
   player2_guess = gets.chomp.downcase
-  puts new_game.guess(player2_guess)
-  break if !new_game.progress.include?("_")
+  puts newgame.guess(player2_guess)
+  break if !newgame.progress.include?("_")
 end
 
-if new_game.progress.include?("_")
-  puts new_game.game_lost
+if newgame.progress.include?("_")
+  puts newgame.game_lost
 else
-  puts new_game.game_won
+  puts newgame.game_won
 end

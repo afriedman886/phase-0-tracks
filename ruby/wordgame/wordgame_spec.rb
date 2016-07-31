@@ -35,3 +35,5 @@ let(:newgame) { Wordgame.new("elephant") }
   end
 
 end
+
+
