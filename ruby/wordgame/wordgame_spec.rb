@@ -27,11 +27,11 @@ let(:newgame) { Wordgame.new("elephant") }
   end
 
   it "prints congratulatory message when game is won" do
-    expect(newgame.game_won).to eq "Great job!!  Those big, beautiful brains of yours just won the game!"
+    expect(newgame.game_won).to eq "Great job!! Those big, beautiful brains of yours just won the game!"
   end
 
   it "prints taunting message when game is lost" do
-    expect(newgame.game_lost).to eq "Did you eat a lot of paint chips as a kid?  Better luck next time..."
+    expect(newgame.game_lost).to eq "Did you eat a lot of paint chips as a kid? Better luck next time..."
   end
 
 end
