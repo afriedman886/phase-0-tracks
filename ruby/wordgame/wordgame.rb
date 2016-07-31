@@ -64,8 +64,8 @@ puts new_game.progress
 puts "\nGuess a letter when you're ready to begin"
 
 until new_game.guesses_remaining == 0
-  letter = gets.chomp.downcase
-  puts new_game.guess(letter)
+  player2_guess = gets.chomp.downcase
+  puts new_game.guess(player2_guess)
   break if !new_game.progress.include?("_")
 end
 
