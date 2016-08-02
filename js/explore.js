@@ -15,5 +15,6 @@ reverse = function(str) {
 
 // DRIVER CODE
 reverse("hello");
+
 //
 //var backwardsAnimal = reverse("elephant");
