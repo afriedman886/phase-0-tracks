@@ -1,3 +1,4 @@
+// Release 0: Horse Arrays
 var colors = ["red", "yellow", "turquoise", "sparkle"];
 var horses = ["Seabiscuit", "Secretariat", "Bojack", "Shadowfax"];
 
@@ -7,6 +8,7 @@ horses.push("American Pharoah");
 console.log(colors);
 console.log(horses);
 
+// Release 1: Create Object
 var horseObject = {};
 
 for (var i = 0; i < colors.length; i++) {
@@ -14,6 +16,8 @@ for (var i = 0; i < colors.length; i++) {
 }
 
 console.log(horseObject);
+
+// Release 2: Car Contructor
 
 function Car(make, model, shade) {
   this.make = make;
