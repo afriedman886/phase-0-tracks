@@ -6,11 +6,9 @@
 // Return: string printed in reverse order
 
 reverse = function(str) {
-  var arr = str.split("")
-  for (i = (arr.length - 1); i >= 0; i--) {
-    console.log((arr[i]).join(""));}
-    //console.log(arr.join(""));
-
+  for (i = (str.length - 1); i >= 0; i--) {
+    console.log(str[i]);
+  }
 }
 
 // DRIVER CODE
