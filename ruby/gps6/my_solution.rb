@@ -92,3 +92,18 @@ end
 
 #=======================================================================
 # Reflection Section
+
+# What are the differences between the two different hash syntaxes shown in the state_data file?
+# The syntax for the state/population pair uses hash rockets and a string value as each key.  This is useful because the key is printed in a string when the virus_effects method is called.  The population data uses symbols for each key (and utilizes the symbol shortcut, i.e. not requiring the hash rocket).  This helps the program load faster because only two symbols (with unique id numbers) are required for the hash.
+
+# What does require_relative do? How is it different from require?
+# Require_relative allows you to access a Ruby doc with a specified load path (using "require" doesn't require a specific load path, it will pull from the global LOAD_PATH where Ruby info is stored).
+
+# What are some ways to iterate through a hash?
+# Hashes can be iterated through using .each (as well as .each_key, .each_value, and .each_pair), .delete_if, .keep_if, .reject, and .select
+
+# When refactoring virus_effects, what stood out to you about the variables, if anything?
+# The variables in the parameters were nowhere to be found in the actual method code (due to instance variables being used instead).  Since instance variables were sufficient, no parameter was needed.
+
+# What concept did you most solidify in this challenge?
+# I feel better about iteration after completing this challenge, and I was also happy to have a chance to play around with cases, which I feel like we briefly touched on in a prior lesson, but never spent a lot of time practicing.  In this situation, a case statement seemed like a cleaner way to represent multiple if/elsif statements.  So I feel I better understand when it's preferable to use one of these formats over the other.
