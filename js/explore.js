@@ -5,10 +5,12 @@
     // Combine all characters into one return string
 // Return: string printed in reverse order
 
-reverse = function(str) {
+function reverse(str) {
+  var reverseArr = [];
   for (i = (str.length - 1); i >= 0; i--) {
-    console.log(str[i]);
+    reverseArr.push(str[i]);
   }
+  console.log(reverseArr.join(""));
 }
 
 // DRIVER CODE
