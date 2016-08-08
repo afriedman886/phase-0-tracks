@@ -27,13 +27,12 @@ function longest(arr) {
 
 // Input: Two objects
 // Steps:
+  // Set default matchStatus to false
   // Create an array of keys for each object
-  // Compare both key arrays for identical keys
+  // Compare both key arrays and check for identical keys
     // IF identical keys exists, compare their values from both objects
       // IF values match, return true
-      // ELSE return false
-    // ELSE return false
-// Output: True or False
+// Output: true or false
 
 function match(obj1, obj2) {
   var matchStatus = false;
@@ -106,10 +105,10 @@ function randNum(min, max) {
 
 // Release 0
 var fruit = ["apple", "orange", "banana", "watermelon"];
-var cities = ["Chicago", "Washington, D.C.", "Los Angeles", "Boston"]
+var cities = ["Chicago", "Washington, D.C.", "Los Angeles", "Boston"];
 
-console.log(longest(fruit))
-console.log(longest(cities))
+console.log(longest(fruit));
+console.log(longest(cities));
 
 // Release 1
 //Add some driver code that tests both outcomes of your function.
@@ -118,8 +117,8 @@ var cats = {"Salem": 3, "Garfield": 20, "McGonagall": 60};
 var dogs = {"Wishbone": 6, "Lassie": 8, "Sunny": 7};
 var family = {"Amy": 29, "Jenny": 25, "Dad": 58, "Sunny": 7};
 
-console.log(match(cats, dogs))
-console.log(match(dogs, family))
+console.log(match(cats, dogs));
+console.log(match(dogs, family));
 
 // Release 2
 // Add driver code that does the following 10 times: generates an array, prints the array, feeds the array to your "longest word" function, and prints the result.
