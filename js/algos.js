@@ -55,9 +55,7 @@ function randWordGenerator(n) {
     var wordLength = randNum(1,10);
     var newWord = "";
     for (var x=1; x<=wordLength; x++) {
-      var alphabet = "abcdefghijklmnopqrstuvwxyz";
-      var alphaIndex = randNum(0,25);
-      newWord += alphabet.charAt(alphaIndex);
+      newWord += randAlpha();
     }
     randWords.push(newWord);
   }
@@ -65,7 +63,9 @@ function randWordGenerator(n) {
 }
 
 function randAlpha() {
-
+  var alphabet = "abcdefghijklmnopqrstuvwxyz";
+  var alphaIndex = randNum(0,25);
+  return alphabet.charAt(alphaIndex);
 }
 
 function randNum(min, max) {
@@ -73,6 +73,7 @@ function randNum(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
 
 // Driver Code
 
@@ -85,8 +86,11 @@ console.log(longest(cities))
 
 //Add some driver code that tests both outcomes of your function.
 
+
 // Add driver code that does the following 10 times: generates an array, prints the array, feeds the array to your "longest word" function, and prints the result.
 
-
-
-console.log(randWordGenerator(6))
+for (var i=1; i<=10; i++) {
+  var array = randWordGenerator(5);
+  console.log(array);
+  console.log("Longest word: " + longest(array));
+}
