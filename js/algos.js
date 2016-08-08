@@ -20,15 +20,42 @@ function longest(arr) {
   return longestWord;
 }
 
+
 // Release 1
 
 // Write a function that takes two objects and checks to see if the objects share at least one key-value pair.
 
 // Input: Two objects
 // Steps:
-  // Loop through first object to compare each key-value pair
-    // Nested Loop: loop though second object so that each key-value pair is compared to each
+  // Create an array of keys for each object
+  // Compare both key arrays for identical keys
+    // IF identical keys exists, compare their values from both objects
+      // IF values match, return true
+      // ELSE return false
+    // ELSE return false
 // Output: True or False
+
+function match(obj1, obj2) {
+  var matchStatus = false;
+  var matchArr = [];
+  var arr1 = Object.keys(obj1);
+  var arr2 = Object.keys(obj2);
+  for (i=0; i<arr1.length; i++) {
+    for (x=0; x<arr2.length; x++) {
+      if (arr1[i] === arr2[x]) {
+      matchArr.push(arr1[i]);
+      }
+    }
+  }
+  if (matchArr.length > 0) {
+    for (z=0; z<matchArr.length; z++) {
+      if (obj1[matchArr[z]] === obj2[matchArr[z]]) {
+        matchStatus = true;
+      }
+    }
+  }
+  return matchStatus
+}
 
 
 // Release 2
@@ -77,16 +104,24 @@ function randNum(min, max) {
 
 // Driver Code
 
+// Release 0
 var fruit = ["apple", "orange", "banana", "watermelon"];
 var cities = ["Chicago", "Washington, D.C.", "Los Angeles", "Boston"]
 
 console.log(longest(fruit))
 console.log(longest(cities))
 
-
+// Release 1
 //Add some driver code that tests both outcomes of your function.
 
+var cats = {"Salem": 3, "Garfield": 20, "McGonagall": 60};
+var dogs = {"Wishbone": 6, "Lassie": 8, "Sunny": 7};
+var family = {"Amy": 29, "Jenny": 25, "Dad": 58, "Sunny": 7};
 
+console.log(match(cats, dogs))
+console.log(match(dogs, family))
+
+// Release 2
 // Add driver code that does the following 10 times: generates an array, prints the array, feeds the array to your "longest word" function, and prints the result.
 
 for (var i=1; i<=10; i++) {
