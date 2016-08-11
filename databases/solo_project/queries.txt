@@ -43,3 +43,26 @@ Command:
 DELETE FROM characters WHERE alive="false";
 
 Output: N/A
+
+——————————————————————————
+
+JOINS
+
+Command:
+SELECT characters.name, houses.name FROM characters LEFT OUTER JOIN houses ON characters.house_id = houses.id;
+
+Output:
+Tyrion|Targaryen
+Daenerys|Targaryen
+Ned|Stark
+Robert|Baratheon
+
+
+Command:
+SELECT characters.name, houses.sigil FROM characters INNER JOIN houses ON characters.sigil_id=houses.id;
+
+Output:
+Tyrion|Dragon
+Daenerys|Dragon
+Ned|Direwolf
+Robert|Stag
