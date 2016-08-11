@@ -1,0 +1,68 @@
+1. Display the information in one table (either table is fine).
+
+Command: 
+SELECT * FROM houses;
+
+Output: 
+1|Stark|Direwolf
+2|Lannister|Lion
+3|Baratheon|Stag
+4|Targaryen|Dragon
+
+2. Update an item that meets some condition (you can choose a condition that makes sense).
+
+Command:
+UPDATE characters SET house_id=4, sigil_id=4 WHERE name="Tyrion";
+
+Output: N/A
+
+3. Display the information in both tables using one query.
+
+Command:
+SELECT * FROM characters, houses WHERE characters.house_id = houses.id;
+
+Output:
+1|Ned|1|1|false|1|Stark|Direwolf
+2|Tyrion|4|4|true|4|Targaryen|Dragon
+3|Daenerys|4|4|true|4|Targaryen|Dragon
+4|Robert|3|3|false|3|Baratheon|Stag
+
+4. Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+
+Command:
+SELECT characters.name, houses.name, houses.sigil, characters.alive FROM characters JOIN houses ON characters.house_id = houses.id;
+
+Output:
+Ned|Stark|Direwolf|false
+Tyrion|Targaryen|Dragon|true
+Daenerys|Targaryen|Dragon|true
+Robert|Baratheon|Stag|false
+
+5. Delete an item that meets some condition (you can choose a condition that makes sense).
+Command:
+DELETE FROM characters WHERE alive="false";
+
+Output: N/A
+
+——————————————————————————
+
+JOINS
+
+Command:
+SELECT characters.name, houses.name FROM characters LEFT OUTER JOIN houses ON characters.house_id = houses.id;
+
+Output:
+Tyrion|Targaryen
+Daenerys|Targaryen
+Ned|Stark
+Robert|Baratheon
+
+
+Command:
+SELECT characters.name, houses.sigil FROM characters INNER JOIN houses ON characters.sigil_id=houses.id;
+
+Output:
+Tyrion|Dragon
+Daenerys|Dragon
+Ned|Direwolf
+Robert|Stag
