@@ -1,0 +1,31 @@
+You've joined two tables before. How do you join three?
+
+Command: 
+SELECT * FROM reviews, users, businesses WHERE reviews.user_id = users.id AND reviews.business_id = businesses.id;
+
+Output:
+1|3|not as good as my first wedding|1|1|1|Bradford|Pitt|1|Grundy Hollow Wedding Chapel
+2|5|Best.Sushi.EVER!|6|7|7|Denzel|George|6|Sushi World
+3|4|great music|3|4|4|Steven|Wonder|3|The Beagle Nightclub
+
+
+There are some repetitive columns if we choose to view all fields. Choose instead to just view the user's names, the business name, the star rating, and the comment.
+
+Command:
+SELECT users.first_name, users.last_name, businesses.name, reviews.stars, reviews.comment FROM reviews JOIN users ON reviews.user_id = users.id JOIN businesses ON reviews.business_id = businesses.id;
+
+Output:
+Bradford|Pitt|Grundy Hollow Wedding Chapel|3|not as good as my first wedding
+Denzel|George|Sushi World|5|Best.Sushi.EVER!
+Steven|Wonder|The Beagle Nightclub|4|great music
+
+
+How do you view the data of all three tables for just one particular business? 
+
+Command:
+SELECT * FROM reviews, users, businesses WHERE reviews.user_id = users.id AND reviews.business_id = businesses.id AND businesses.name = "Sushi World";
+
+Output:
+2|5|Best.Sushi.EVER!|6|7|7|Denzel|George|6|Sushi World
+
+
