@@ -15,6 +15,11 @@ create_table_cmd = <<-SQL
   )
 SQL
 
+db.execute(create_table_cmd)
+
+def new_review(db, name, rating, recommended, comments)
+  db.execute("INSERT INTO movie_reviews (name, rating, recommended, comments) VALUES (?, ?, ?, ?)", [name, rating, recommended, comments])
+end
 
 # USER INTERFACE
 
