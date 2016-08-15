@@ -75,9 +75,9 @@ loop do
   if list_select == 1
     movie_list = db.execute("SELECT * FROM movie_reviews")
   elsif list_select ==2
-
+    movie_list = db.execute("SELECT * FROM movie_reviews WHERE recommended = 'true'")
   else list_select == 3
-
+    movie_list = db.execute("SELECT * FROM movie_reviews ORDER BY rating DESC")
   end
 
   movie_list.each do |movie|
