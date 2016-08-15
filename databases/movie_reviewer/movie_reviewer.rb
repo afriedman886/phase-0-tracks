@@ -21,12 +21,41 @@ def new_review(db, name, rating, recommended, comments)
   db.execute("INSERT INTO movie_reviews (name, rating, recommended, comments) VALUES (?, ?, ?, ?)", [name, rating, recommended, comments])
 end
 
+
+
+
 # USER INTERFACE
 
-# Ask user which new movie they would like to review
+# Ask user about new movie to review
 
-# Ask user what they would like to rate the movie (on scale from 1-5)
+puts "What movie did you see?"
+new_movie = gets.chomp
 
-# Ask if they would recommend seeing the movie to a friend (boolean)
+puts "On a scale from 1-5, what would you rate the movie?"
+user_rating = gets.chomp.to_i
 
-# Ask user what comments (if any) they would like to make about the movie
+puts "Would you recommend the movie to a friend? (yes/no)"
+recommendation_response = ""
+until recommendation_response.downcase == "yes" || recommendation_response.downcase == "no"
+  recommendation_response = gets.chomp
+  if recommendation_response.downcase == "yes"
+    user_recommendation = "true"
+  elsif recommendation_response.downcase == "no"
+    user_recommendation = "false"
+  else
+    puts "I'm sorry, I didn't understand your response, please answer 'yes' or 'no'"
+  end
+end
+
+puts "Any additional thoughts/comments about the movie?"
+comments_response = gets.chomp
+if comments_response.downcase == "no"
+  user_comments = "N/A"
+else user_comments = comments_response
+end
+
+# Add new review to movies database
+
+new_review(db, new_movie, user_rating, user_recommendation, user_comments)
+
+# Create option to sort/view movies by rating or view movies of only a particular rating
