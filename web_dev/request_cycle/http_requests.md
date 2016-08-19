@@ -17,7 +17,7 @@
 
 ###What is the difference between a GET request and a POST request? When might each be used?
 - GET requests data from the server; all required data is included in the URL, so it is not very secure and shouldn't include sensitive info like passwords; good for a database inquiry 
-- POST submits data to be processed by the server; it is more secure than a GET request because any submitted info is included in the body of the html rather than the URL
+- POST submits data to be processed by the server; it is more secure than a GET request because any submitted info is included in the body of the html rather than the URL; good for entering/updating account info
 
 ###Optional bonus question: What is a cookie (the technical kind, not the delicious kind)? How does it relate to HTTP requests?
 
