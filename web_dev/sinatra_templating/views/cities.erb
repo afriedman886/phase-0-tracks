@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Breakdown by City</title>
+</head>
+<body>
+  <h1>Number of students per city:</h1>
+
+  <table border=1>
+    <tr>
+      <% cities = @students.each do |student| %>
+
+        <td> <%= student['campus'] %> </td>
+        <td>1</td>
+    </tr>
+    <% end %>
+  </table>
+
+</body>
+</html>
