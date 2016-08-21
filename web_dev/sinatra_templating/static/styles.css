@@ -1,3 +1,41 @@
 body {
+  text-align: center;
   font-family: Helvetica;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+ul {
+  background-color: #D1C9FF;
+  padding: 10px 20px;
+  width: 300px;
+  border: 1px solid purple;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+table {
+  background-color: #99F7AB;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+td {
+  width: 100px;
+  height: 30px;
+}
+
+#welcome {
+  font-size: 25px;
+}
+
+#main_header {
+  font-size: 45px;
 }
