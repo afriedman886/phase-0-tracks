@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enrollment Breakdown</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+  <h1>Number of students enrolled per city:</h1>
+
+  <table border=1>
+    <tr>
+      <th>City</th>
+      <th>Enrolled Students</th>
+    </tr>
+    <tr>
+      <% @students.each do |student| %>
+        <% if !@cities.has_key?(student['campus']) %>
+          <% @cities[student['campus']] = 1 %>
+        <% else @cities[student['campus']] +=1 %>
+        <% end %>
+      <% end %>
+
+      <% @cities.each do |city, enrolled| %>
+        <td> <%= city %> </td>
+        <td> <%= enrolled %> </td>
+    </tr>
+      <% end %>
+  </table>
+
+  <nav><a href="/">Home</a></nav>
+</body>
+</html>
