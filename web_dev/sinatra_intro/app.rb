@@ -60,7 +60,7 @@ get '/great_job' do
 end
 
 get '/add/:number_1/:number_2' do
-  "#{params[:number_1]} + #{params[:number_2]} = "
+  "#{params[:number_1]} + #{params[:number_2]} = #{(params[:number_1].to_i + params[:number_2].to_i).to_s}"
 end
-#A route that uses route parameters to add two numbers and respond with the result. The data types are tricky here -- when will the data need to be (or arrive as) a string?
+
 #Optional bonus: Make a route that allows the user to search the database in some way -- maybe for students who have a certain first name, or some other attribute. If you like, you can simply modify the home page to take a query parameter, and filter the students displayed if a query parameter is present.
