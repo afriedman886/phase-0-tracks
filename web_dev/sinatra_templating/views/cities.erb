@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Student Breakdown by City</title>
+  <title>Enrollment Breakdown</title>
 </head>
 <body>
-  <h1>Number of students per city:</h1>
+  <h1>Number of students enrolled per city:</h1>
 
   <table border=1>
     <tr>
-      <% cities = @students.each do |student| %>
+      <% @students.each do |student| %>
+        <% if !@cities.has_key?(student['campus']) %>
+          <% @cities[student['campus']] = 1 %>
+        <% else @cities[student['campus']] +=1 %>
+        <% end %>
+      <% end %>
 
-        <td> <%= student['campus'] %> </td>
-        <td>1</td>
+      <% @cities.each do |city, enrolled| %>
+        <td> <%= city %> </td>
+        <td> <%= enrolled %> </td>
     </tr>
-    <% end %>
+      <% end %>
   </table>
-
 </body>
 </html>
