@@ -1,0 +1,2 @@
+###Jquery research plan
+I plan to start with a Google search and explore the top 10 websites it returns.  In my experience, reading one website often leads to other web resources through links, so I anticipate reading more than 10 articles by concentrating on these top 10 search results.  I will take a couple 5 minute breaks so that I don't get overwhelmed, and will use a project file to test jquery as I learn more about it (I learn best by being able to practice and test theories on my own).
