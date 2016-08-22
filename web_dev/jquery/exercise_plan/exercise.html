@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise Plan</title>
+</head>
+<body>
+  <h1>Let's Get in Shape!</h1>
+  <h3><strong>You can do it!!</strong></h3>
+  <h4>Weekly Workout Plan:</h4>
+  <p><em>Click on days you've already completed to remove them from your workout list</em></p>
+  <ul>
+    <li>Monday: rest</li>
+    <li>Tuesday: Yoga</li>
+    <li>Wednesday: Zumba</li>
+    <li>Thursday: Zumba</li>
+    <li>Friday: rest</li>
+    <li>Saturday: Yoga</li>
+    <li>Sunday: Zumba</li>
+  </ul>
+
+  <script src="jquery-3.1.0.min.js"></script>
+  <script>
+    window.onload = function() {
+      alert( "Woohoo!! So happy you're here!" );
+    };
+  </script>
+  <script>
+    $( "li" ).click(function( event ) {
+      event.preventDefault();
+      $( this ).hide( "slow" );
+    });
+  </script>
+</body>
+</html>
